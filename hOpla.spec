@@ -62,8 +62,8 @@ Biblioteki statyczne z funkcjami hOpla.
 rm -f missing
 gettextize --copy --force
 aclocal -I %{_aclocaldir}/gnome
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure  \
 	--with-gnome \
 	--without-included-gettext
