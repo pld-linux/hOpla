@@ -60,7 +60,7 @@ Biblioteki statyczne z funkcjami hOpla.
 
 %build
 rm -f missing
-gettextize --copy --force
+%{__gettextize}
 aclocal -I %{_aclocaldir}/gnome
 %{__autoconf}
 %{__automake}
