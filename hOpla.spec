@@ -5,13 +5,6 @@ Version:	1.0.3
 Release:	2
 License:	GPL
 Group:		X11/Libraries
-Group(de):	X11/Libraries
-Group(es):	X11/Bibliotecas
-Group(fr):	X11/Librairies
-Group(pl):	X11/Biblioteki
-Group(pt_BR):	X11/Bibliotecas
-Group(ru):	X11/Библиотеки
-Group(uk):	X11/Б╕бл╕отеки
 Source0:	http://hopla.sourceforge.net/dl/%{name}-%{version}.tar.gz
 URL:		http://hopla.sourceforge.net/
 BuildRequires:	gnome-libs-devel
@@ -42,13 +35,6 @@ udostЙpnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
 Summary:	hOpla print libraries, includes, etc
 Summary(pl):	H0pla print - pliki nagЁСwkowe itp.
 Group:		X11/Development/Libraries
-Group(de):	X11/Entwicklung/Libraries
-Group(es):	X11/Desarrollo/Bibliotecas
-Group(fr):	X11/Development/Librairies
-Group(pl):	X11/Programowanie/Biblioteki
-Group(pt_BR):	X11/Desenvolvimento/Bibliotecas
-Group(ru):	X11/Разработка/Библиотеки
-Group(uk):	X11/Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -61,13 +47,6 @@ Pliki nagЁСwkowe itp. do hOpla.
 Summary:	hOpla static libraries
 Summary(pl):	Biblioteki statyczne hOpla
 Group:		X11/Development/Libraries
-Group(de):	X11/Entwicklung/Libraries
-Group(es):	X11/Desarrollo/Bibliotecas
-Group(fr):	X11/Development/Librairies
-Group(pl):	X11/Programowanie/Biblioteki
-Group(pt_BR):	X11/Desenvolvimento/Bibliotecas
-Group(ru):	X11/Разработка/Библиотеки
-Group(uk):	X11/Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
