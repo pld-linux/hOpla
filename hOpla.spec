@@ -40,7 +40,7 @@ Requires:	%{name} = %{version}
 %description devel
 Header files for hOpla.
 
-%description -l pl devel
+%description devel -l pl
 Pliki nag³ówkowe itp. do hOpla.
 
 %package static
@@ -52,7 +52,7 @@ Requires:	%{name}-devel = %{version}
 %description static
 hOpla static libraries.
 
-%description -l pl static
+%description static -l pl
 Biblioteki statyczne z funkcjami hOpla.
 
 %prep
