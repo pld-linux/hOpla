@@ -5,9 +5,9 @@ Version:	1.0.3
 Release:	2
 License:	GPL
 Group:		X11/Libraries
-Source0:	http://hopla.sourceforge.net/dl/%{name}-%{version}.tar.gz
-# Source0-md5:	1b3ef5674d09f6ffeec5b0aade8f491b
-URL:		http://hopla.sourceforge.net/
+Source0:	http://ftp.gnu.org/gnu/toutdoux/%{name}-%{version}.tar.gz
+# Source0-md5:	7ff236581ab80223b5f82931a8f1260c
+URL:		http://www.gnu.org/software/toutdoux/
 BuildRequires:	gnome-libs-devel
 BuildRequires:	ORBit-devel
 BuildRequires:	gtk+-devel >= 1.2.0
