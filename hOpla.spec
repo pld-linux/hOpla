@@ -33,7 +33,7 @@ udostêpnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
 
 %package devel
 Summary:	hOpla print libraries, includes, etc
-Summary(pl):	H0pla print - pliki nag³ówkowe itp.
+Summary(pl):	H0pla print - pliki nag³ówkowe itp
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}
 
