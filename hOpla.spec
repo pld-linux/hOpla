@@ -8,15 +8,15 @@ Group:		X11/Libraries
 Source0:	http://ftp.gnu.org/gnu/toutdoux/%{name}-%{version}.tar.gz
 # Source0-md5:	7ff236581ab80223b5f82931a8f1260c
 URL:		http://www.gnu.org/software/toutdoux/
-BuildRequires:	gnome-libs-devel
 BuildRequires:	ORBit-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	bison
+BuildRequires:	gettext-devel
+BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libxml-devel
 BuildRequires:	postgresql-devel
-BuildRequires:	bison
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
