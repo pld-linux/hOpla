@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Libraries
 Source0:	http://hopla.sourceforge.net/dl/%{name}-%{version}.tar.gz
+# Source0-md5:	1b3ef5674d09f6ffeec5b0aade8f491b
 URL:		http://hopla.sourceforge.net/
 BuildRequires:	gnome-libs-devel
 BuildRequires:	ORBit-devel
