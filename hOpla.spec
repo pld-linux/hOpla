@@ -7,7 +7,11 @@ License:	GPL
 Group:		X11/Libraries
 Group(de):	X11/Libraries
 Group(es):	X11/Bibliotecas
+Group(fr):	X11/Librairies
 Group(pl):	X11/Biblioteki
+Group(pt_BR):	X11/Bibliotecas
+Group(ru):	X11/Библиотеки
+Group(uk):	X11/Б╕бл╕отеки
 Source0:	http://hopla.sourceforge.net/dl/%{name}-%{version}.tar.gz
 URL:		http://hopla.sourceforge.net/
 BuildRequires:	gnome-libs-devel
@@ -16,6 +20,9 @@ BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libxml-devel
 BuildRequires:	postgresql-devel
 BuildRequires:	bison
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -33,24 +40,34 @@ udostЙpnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
 
 %package devel
 Summary:	hOpla print libraries, includes, etc
-Summary(pl):	H0pla print - pliki nagЁСwkowe, etc
+Summary(pl):	H0pla print - pliki nagЁСwkowe itp.
 Group:		X11/Development/Libraries
 Group(de):	X11/Entwicklung/Libraries
+Group(es):	X11/Desarrollo/Bibliotecas
+Group(fr):	X11/Development/Librairies
 Group(pl):	X11/Programowanie/Biblioteki
+Group(pt_BR):	X11/Desenvolvimento/Bibliotecas
+Group(ru):	X11/Разработка/Библиотеки
+Group(uk):	X11/Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
 Header files for hOpla.
 
 %description -l pl devel
-Pliki nagЁСwkowe etc do hOpla.
+Pliki nagЁСwkowe itp. do hOpla.
 
 %package static
 Summary:	hOpla static libraries
 Summary(pl):	Biblioteki statyczne hOpla
 Group:		X11/Development/Libraries
 Group(de):	X11/Entwicklung/Libraries
+Group(es):	X11/Desarrollo/Bibliotecas
+Group(fr):	X11/Development/Librairies
 Group(pl):	X11/Programowanie/Biblioteki
+Group(pt_BR):	X11/Desenvolvimento/Bibliotecas
+Group(ru):	X11/Разработка/Библиотеки
+Group(uk):	X11/Розробка/Б╕бл╕отеки
 
 %description static
 hOpla static libraries.
@@ -62,7 +79,7 @@ Biblioteki statyczne z funkcjami hOpla.
 %setup -q
 
 %build
-rm missing
+rm -f missing
 gettextize --copy --force
 aclocal -I %{_aclocaldir}/gnome
 autoconf
@@ -81,11 +98,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %find_lang %{name} --with-gnome
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
-
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
