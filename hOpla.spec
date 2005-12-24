@@ -34,7 +34,7 @@ udostêpnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
 Summary:	hOpla print libraries, includes, etc
 Summary(pl):	H0pla print - pliki nag³ówkowe itp
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for hOpla.
@@ -46,7 +46,7 @@ Pliki nag³ówkowe itp. do hOpla.
 Summary:	hOpla static libraries
 Summary(pl):	Biblioteki statyczne hOpla
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 hOpla static libraries.
@@ -71,7 +71,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name} --with-gnome
 
