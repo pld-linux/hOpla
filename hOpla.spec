@@ -1,5 +1,5 @@
 Summary:	XML-SQL link
-Summary(pl):	£±cze XML-SQL
+Summary(pl.UTF-8):   ≈ÅƒÖcze XML-SQL
 Name:		hOpla
 Version:	1.0.3
 Release:	2
@@ -25,33 +25,33 @@ hOpla links XML files and SQL databases. It can change database's
 structure (table, field, type). It also can provide datatable for
 applications (add, remove or update).
 
-%description -l pl
-hOpla ≥±czy pliki XML z bazami danych SQL. Jest w stanie modyfikowaÊ
-strukturÍ baz danych (tabele, pola, typy). Umoøliwia takøe
-udostÍpnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
+%description -l pl.UTF-8
+hOpla ≈ÇƒÖczy pliki XML z bazami danych SQL. Jest w stanie modyfikowaƒá
+strukturƒô baz danych (tabele, pola, typy). Umo≈ºliwia tak≈ºe
+udostƒôpnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
 
 %package devel
 Summary:	hOpla print libraries, includes, etc
-Summary(pl):	H0pla print - pliki nag≥Ûwkowe itp
+Summary(pl.UTF-8):   H0pla print - pliki nag≈Ç√≥wkowe itp
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for hOpla.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe itp. do hOpla.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe itp. do hOpla.
 
 %package static
 Summary:	hOpla static libraries
-Summary(pl):	Biblioteki statyczne hOpla
+Summary(pl.UTF-8):   Biblioteki statyczne hOpla
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 hOpla static libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne z funkcjami hOpla.
 
 %prep
