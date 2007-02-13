@@ -1,5 +1,5 @@
 Summary:	XML-SQL link
-Summary(pl.UTF-8):   Łącze XML-SQL
+Summary(pl.UTF-8):	Łącze XML-SQL
 Name:		hOpla
 Version:	1.0.3
 Release:	2
@@ -32,7 +32,7 @@ udostępnianie bazy aplikacjom (dodawanie, usuwanie, aktualizacja).
 
 %package devel
 Summary:	hOpla print libraries, includes, etc
-Summary(pl.UTF-8):   H0pla print - pliki nagłówkowe itp
+Summary(pl.UTF-8):	H0pla print - pliki nagłówkowe itp
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -44,7 +44,7 @@ Pliki nagłówkowe itp. do hOpla.
 
 %package static
 Summary:	hOpla static libraries
-Summary(pl.UTF-8):   Biblioteki statyczne hOpla
+Summary(pl.UTF-8):	Biblioteki statyczne hOpla
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
